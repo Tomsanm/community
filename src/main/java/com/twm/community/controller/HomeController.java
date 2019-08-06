@@ -26,7 +26,7 @@ public class HomeController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("/index")
+    @GetMapping({"/index","/"})
     public String getIndexPage(ModelMap modelMap, Page page){ // spring会自动把page注入给 modelMap
         // 得到页面的总记录数
         page.setRows(discussPostService.getCount(0));

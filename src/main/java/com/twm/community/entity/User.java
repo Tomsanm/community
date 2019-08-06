@@ -4,7 +4,6 @@ import java.util.Date;
 
 public class User {
     private int id;
-    private int userId;
     private String username;
     private String password;
     private String salt;
@@ -75,13 +74,7 @@ public class User {
         return activationCode;
     }
 
-    public int getUserId() {
-        return userId;
-    }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
-    }
 
     public void setActivationCode(String activationCode) {
         this.activationCode = activationCode;

@@ -1,8 +1,8 @@
 spring:
   datasource:
     username: root
-    password: 123456
-    url: jdbc:mysql://localhost:3306/community?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+    password: 140429
+    url: jdbc:mysql://localhost:3306/community?serverTimezone=Hongkong&useSSL=false&allowPublicKeyRetrieval=true
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
     initialSize: 5
@@ -26,8 +26,10 @@ spring:
 
 
 
-
 server:
   port: 8080  # 配置项目访问的端口号
 #  servlet:
 #    context-path: /  # 配置项目访问路径
+mybatis:
+  configuration:
+    use-generated-keys: true
